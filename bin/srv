@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+const pm2 = require('pm2');
+const bc = require('./../BasicConfig');
+
+setInterval(() => {
+   console.log('waiting...') ;
+}, 60 * 1000);

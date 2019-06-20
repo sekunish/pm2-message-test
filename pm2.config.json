@@ -1,0 +1,30 @@
+{
+    "apps": [
+        {
+            "description": "Web app",
+            "name": "web",
+            "script": "bin/www",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            },
+            "instances": 4,
+            "exec_mode": "fork"
+        },
+        {
+            "description": "Data app",
+            "name": "svr",
+            "script": "bin/srv",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            },
+            "instance": 1,
+            "exec_mode": "fork"
+        }
+    ]
+}
